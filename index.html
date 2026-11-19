@@ -2,1081 +2,364 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Mis 15 Años · Paolina Giovanna</title>
-<meta property="og:title" content="XV Años de Paolina">
-<meta property="og:description" content="¡Te invito a celebrar mis XV años!">
-<meta property="og:image" content="https://res.cloudinary.com/dr1usv5lo/image/upload/v1774807758/WhatsApp_Image_2026-03-29_at_15.04.20_hyvpi6.jpg">
-<meta property="og:url" content="https://vadas-tarjetas.github.io/15Paolina/">
-<meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pato & Edu · 10 años de casados</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --purp-dark: #1e0a3c;
-  --purp-bg:   #6d2885;
-  --purp-mid:  #5c2d9e;
-  --gold:      #d4a017;
-  --gold-l:    #f0c040;
-  --lace:      #f6f4c4;
-  --blanco:    rgba(255,255,255,0.92);
-}
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  font-family: 'Lora', serif;
-  font-size: 18px;
-  background: var(--purp-dark);
-  color: #333;
-  overflow-x: hidden;
-  text-align: center;
-}
+:root{--noche:#0b0620;--vio:#2a0a5e;--mag:#ff2e9a;--cian:#22e5ff;--oro:#f5c542;--crema:#fff6e0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cormorant Garamond',serif;font-size:19px;background:var(--noche);color:var(--crema);text-align:center;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
 
-/* ══ SOBRE ══ */
-#sobre-screen {
-  position: fixed; inset: 0; z-index: 9999;
-  background: linear-gradient(160deg,#2a0a50 0%,#1e0a3c 60%,#0d0520 100%);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  transition: opacity .9s ease, transform .9s ease;
-}
-#sobre-screen.cerrar { opacity: 0; transform: scale(1.05); pointer-events: none; }
-#sobre-particles { position: absolute; inset: 0; pointer-events: none; }
-.sobre-wrap {
-  position: relative; display: flex; flex-direction: column; align-items: center; gap: 0;
-  animation: sobreFloat 3s ease-in-out infinite;
-}
-@keyframes sobreFloat { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
-.sobre-svg { width: min(280px,72vw); filter: drop-shadow(0 20px 40px rgba(212,160,23,0.35)); }
-.sobre-titulo {
-  font-family: 'Great Vibes', cursive;
-  font-size: clamp(1.6rem,7vw,2.4rem);
-  color: var(--gold-l);
-  text-shadow: 0 0 20px rgba(212,160,23,0.5);
-  margin-top: 28px; line-height: 1.2;
-}
-.sobre-sub {
-  font-size: .72rem; letter-spacing: .45em; text-transform: uppercase;
-  color: rgba(246,244,196,.65); margin-top: 8px;
-}
-.btn-abrir {
-  margin-top: 32px; padding: 16px 44px;
-  background: linear-gradient(135deg,var(--gold-l),var(--gold));
-  color: var(--purp-dark); border: none; border-radius: 50px;
-  font-family: 'Cinzel', serif;
-  font-size: .78rem; letter-spacing: .18em; cursor: pointer;
-  box-shadow: 0 8px 28px rgba(212,160,23,.45);
-  transition: transform .2s, box-shadow .2s;
-  animation: pulseBtn 2s ease-in-out infinite;
-}
-.btn-abrir:hover { transform: translateY(-3px) scale(1.04); }
-@keyframes pulseBtn {
-  0%,100%{ box-shadow:0 8px 28px rgba(212,160,23,.45); }
-  50%{ box-shadow:0 8px 40px rgba(212,160,23,.75),0 0 0 8px rgba(212,160,23,.08); }
-}
+/* SECCIONES */
+.sec{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:80px 22px;overflow:hidden}
+.sec.corta{min-height:auto;padding:64px 22px}
+.n1{background:radial-gradient(circle at 15% 10%,rgba(122,44,255,.45),transparent 55%),radial-gradient(circle at 90% 95%,rgba(255,46,154,.35),transparent 50%),linear-gradient(165deg,#0b0620,#1b0b45 60%,#0b0620)}
+.n2{background:radial-gradient(circle at 85% 8%,rgba(34,229,255,.28),transparent 50%),radial-gradient(circle at 10% 92%,rgba(122,44,255,.45),transparent 55%),linear-gradient(195deg,#12073a,#0b0620)}
+.n3{background:radial-gradient(circle at 50% 0,rgba(245,197,66,.22),transparent 55%),linear-gradient(180deg,#1b0b45,#0b0620)}
+.haces::before{content:"";position:absolute;left:50%;top:-60%;width:200%;height:220%;transform:translateX(-50%);background:conic-gradient(from 0deg at 50% 30%,transparent 0 8%,rgba(255,46,154,.10) 10% 13%,transparent 15% 33%,rgba(34,229,255,.10) 35% 38%,transparent 40% 58%,rgba(245,197,66,.10) 60% 63%,transparent 65% 83%,rgba(122,44,255,.14) 85% 88%,transparent 90%);animation:giro 40s linear infinite;pointer-events:none}
+@keyframes giro{to{transform:translateX(-50%) rotate(360deg)}}
+.cont{position:relative;z-index:2;width:100%;display:flex;flex-direction:column;align-items:center}
 
-/* ══ NAVEGACIÓN FLOTANTE ══ */
-#nav-float {
-  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
-  z-index: 990; display: none;
-  background: rgba(30,10,60,0.92);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(212,160,23,0.4);
-  border-radius: 50px;
-  padding: 8px 16px;
-  gap: 4px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-  align-items: center;
-}
-#nav-float.visible { display: flex; }
-.nav-btn {
-  width: 36px; height: 36px; border-radius: 50%;
-  background: transparent; border: none;
-  color: rgba(240,192,64,0.6);
-  font-size: 1rem; cursor: pointer;
-  transition: all .25s; display: flex; align-items: center; justify-content: center;
-}
-.nav-btn:hover, .nav-btn.active { color: var(--gold-l); background: rgba(212,160,23,0.15); }
-.nav-sep { width: 1px; height: 20px; background: rgba(212,160,23,0.2); margin: 0 2px; }
-#nav-label {
-  font-family: 'Cinzel', serif;
-  font-size: .55rem; letter-spacing: .15em;
-  color: var(--gold-l); opacity: 0.7;
-  margin: 0 6px; white-space: nowrap;
-  max-width: 90px; overflow: hidden; text-overflow: ellipsis;
-}
+/* TARJETA */
+.card{width:100%;max-width:460px;padding:36px 26px;border-radius:26px;background:rgba(14,6,40,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1.5px solid rgba(255,46,154,.55);box-shadow:0 0 28px rgba(255,46,154,.22),0 0 0 1px rgba(34,229,255,.25) inset}
+.card.cian{border-color:rgba(34,229,255,.6);box-shadow:0 0 28px rgba(34,229,255,.2),0 0 0 1px rgba(255,46,154,.2) inset}
 
-/* ══ MAIN ══ */
-#main-content { display: none; }
+/* TIPOGRAFÍA */
+.nombres{font-family:'Dancing Script',cursive;font-weight:700;font-size:clamp(3.4rem,15vw,5.6rem);line-height:1.02;color:var(--crema);text-shadow:0 0 14px rgba(255,46,154,.9),0 0 38px rgba(255,46,154,.5)}
+.nombres i{font-style:normal;color:var(--cian);text-shadow:0 0 14px rgba(34,229,255,.9);font-size:.7em}
+.titulo{font-family:'Cinzel Decorative',cursive;font-size:clamp(1.15rem,4.6vw,1.5rem);color:var(--oro);letter-spacing:.08em;margin-bottom:10px;text-shadow:0 0 12px rgba(245,197,66,.45)}
+.cita{font-style:italic;font-size:clamp(1.25rem,4.6vw,1.55rem);line-height:1.6}
+.chico{font-size:1.05rem;letter-spacing:.04em;opacity:.85}
+.fecha{font-family:'Cinzel Decorative',cursive;font-size:clamp(1.5rem,6.5vw,2.2rem);color:var(--cian);text-shadow:0 0 14px rgba(34,229,255,.7);line-height:1.25}
+.linea{height:2px;width:60%;margin:16px auto;background:linear-gradient(90deg,transparent,var(--mag),var(--cian),transparent)}
 
-/* ══ SECCIONES ══ */
-.sec {
-  position: relative; min-height: 100svh;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 80px 24px 100px; overflow: hidden;
-  background-size: cover; background-position: center; background-repeat: no-repeat;
-}
-@media (min-width: 1024px) { .parallax { background-attachment: fixed; } }
-.pan-bg { animation: panBg 30s ease-in-out infinite alternate; background-size: 200% auto; }
-@keyframes panBg { from { background-position: left center; } to { background-position: right center; } }
-.sec-content { position: relative; z-index: 2; width: 100%; display: flex; flex-direction: column; align-items: center; }
+/* BOTONES */
+.btn{display:inline-block;padding:14px 30px;border-radius:50px;border:none;text-decoration:none;font-family:'Cinzel Decorative',cursive;font-size:.85rem;letter-spacing:.1em;color:#1a0840;background:linear-gradient(135deg,var(--oro),#ffd86b);box-shadow:0 0 22px rgba(245,197,66,.5);transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.neon{color:#fff;background:linear-gradient(135deg,var(--mag),#a02cff);box-shadow:0 0 22px rgba(255,46,154,.55)}
+.btn.wa{color:#fff;background:linear-gradient(135deg,#25d366,#128c7e);box-shadow:0 0 20px rgba(37,211,102,.4);width:100%;margin-top:8px}
+.btn.borde{background:none;color:var(--cian);border:2px solid var(--cian);box-shadow:0 0 14px rgba(34,229,255,.35);padding:10px 22px}
 
-/* ══ BURBUJAS ══ */
-.burbuja {
-  background: var(--blanco); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  border-radius: 36px; padding: 36px 28px; width: 100%; max-width: 440px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.4) inset;
-  border: 2px solid rgba(212,160,23,0.4);
-}
-.burbuja-purpura {
-  background: linear-gradient(145deg,rgba(59,26,110,0.93),rgba(92,45,158,0.90));
-  color: #fdf8e8; border-color: var(--gold-l);
-}
-.burbuja-dorada {
-  background: linear-gradient(145deg,rgba(254,243,176,0.96),rgba(255,255,255,0.90));
-  border-color: var(--gold);
-}
+/* BOLA DE ESPEJOS */
+.bola{position:relative;width:96px;height:140px;margin:0 auto 4px;animation:colgar 4s ease-in-out infinite;transform-origin:50% 0}
+.bola::before{content:"";position:absolute;left:50%;top:0;width:2px;height:44px;background:var(--oro);transform:translateX(-50%)}
+.bola .b{position:absolute;left:0;bottom:0;width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff,#bfc6ff 22%,#7a6bd6 55%,#2a1a6e);box-shadow:0 0 34px rgba(34,229,255,.55),0 0 60px rgba(255,46,154,.35);overflow:hidden}
+.bola .b::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(11,6,32,.45) 0 1px,transparent 1px 12px),repeating-linear-gradient(90deg,rgba(11,6,32,.45) 0 1px,transparent 1px 12px);border-radius:50%}
+@keyframes colgar{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 
-/* ══ TIPOGRAFÍA ══ */
-.nombre { font-family: 'Great Vibes', cursive; font-size: clamp(4rem,15vw,6.5rem); color: var(--gold-l); line-height: 1; text-shadow: 0 0 30px rgba(212,160,23,0.5), 2px 2px 0 rgba(0,0,0,0.2); }
-.subtitulo { font-family: 'Lora', serif; font-size: clamp(.82rem,3vw,1rem); letter-spacing: .3em; text-transform: uppercase; font-weight: 600; }
-.cita { font-family: 'Lora', serif; font-style: italic; font-size: clamp(1.1rem,4vw,1.35rem); line-height: 1.8; font-weight: 400; }
-.titulo-sec { font-family: 'Cinzel', serif; font-size: clamp(1.1rem,4vw,1.5rem); color: var(--purp-bg); letter-spacing: .1em; }
-.ornline { display: flex; align-items: center; gap: 12px; margin: 14px 0; }
-.ornline::before, .ornline::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right,transparent,var(--gold),transparent); }
-.ornline-inv::before, .ornline-inv::after { background: linear-gradient(to right,transparent,var(--gold-l),transparent); }
+/* SOBRE / ENTRADA */
+#sobre{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 50% 30%,#3a0f7a,#0b0620 70%);transition:opacity .8s,transform .8s}
+#sobre.fuera{opacity:0;transform:scale(1.06);pointer-events:none}
+.pulsera{width:100%;max-width:380px;padding:30px 24px;border-radius:20px;background:linear-gradient(135deg,rgba(255,46,154,.2),rgba(34,229,255,.15));border:2px dashed var(--oro);box-shadow:0 0 36px rgba(245,197,66,.3)}
+.pulsera .nombres{font-size:clamp(2.6rem,12vw,3.8rem)}
 
-/* ══ BOTONES ══ */
-.btn { display: inline-block; padding: 13px 30px; border-radius: 50px; border: none; font-family: 'Cinzel', serif; font-size: .82rem; letter-spacing: .12em; cursor: pointer; transition: transform .25s, box-shadow .25s; text-decoration: none; }
-.btn:hover { transform: translateY(-3px); }
-.btn-dorado { background: linear-gradient(135deg,var(--gold-l),var(--gold)); color: var(--purp-dark); box-shadow: 0 6px 20px rgba(212,160,23,.4); }
-.btn-purpura { background: linear-gradient(135deg,var(--purp-mid),var(--purp-dark)); color: var(--gold-l); box-shadow: 0 6px 20px rgba(59,26,110,.5); }
-.btn-mapa { background: transparent; border: 2px solid var(--gold); color: var(--purp-bg); padding: 9px 20px; font-size: .65rem; }
-.btn-wa { background: linear-gradient(135deg,#25d366,#128c7e); color: white; width: 100%; box-shadow: 0 6px 20px rgba(37,211,102,.35); }
+/* CUENTA REGRESIVA */
+.cd{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.cd div{min-width:68px;padding:12px 8px 8px;border-radius:16px;background:rgba(255,255,255,.07);border:1.5px solid rgba(34,229,255,.5);box-shadow:0 0 14px rgba(34,229,255,.2)}
+.cd b{display:block;font-family:'Cinzel Decorative',cursive;font-size:1.9rem;color:var(--crema);text-shadow:0 0 12px rgba(34,229,255,.8)}
+.cd span{font-size:.85rem;color:var(--oro)}
 
-/* ══ MÚSICA ══ */
-#musicBtn {
-  position: fixed; top: 16px; right: 16px; z-index: 998;
-  width: 52px; height: 52px; border-radius: 50%;
-  background: linear-gradient(135deg,var(--purp-mid),var(--purp-dark));
-  border: 2px solid var(--gold); box-shadow: 0 4px 20px rgba(212,160,23,.4);
-  cursor: pointer; display: none; align-items: center; justify-content: center;
-  transition: transform .3s, box-shadow .3s;
-}
-#musicBtn.visible { display: flex; }
-#musicBtn:hover { transform: scale(1.12); }
-.bar-wrap { display: flex; gap: 3px; align-items: flex-end; height: 20px; }
-.mbar { width: 4px; border-radius: 2px; background: var(--gold-l); animation: mbp .9s ease-in-out infinite; }
-.mbar:nth-child(1){height:8px;animation-delay:0s} .mbar:nth-child(2){height:16px;animation-delay:.15s} .mbar:nth-child(3){height:10px;animation-delay:.3s} .mbar:nth-child(4){height:14px;animation-delay:.08s} .mbar:nth-child(5){height:6px;animation-delay:.22s}
-#musicBtn.paused .mbar { animation-play-state: paused; opacity: .5; }
-@keyframes mbp { 0%,100%{transform:scaleY(1)} 50%{transform:scaleY(.35)} }
+/* DATOS */
+.fila{display:flex;gap:10px;text-align:left;margin:10px 0;line-height:1.45;font-size:1.15rem}
+.fila em{font-style:normal;font-size:1.3rem}
 
-/* ══ COUNTDOWN MEJORADO ══ */
-.cd-wrap { display: flex; justify-content: center; gap: 10px; margin: 18px 0; flex-wrap: wrap; }
-.cd-box {
-  background: linear-gradient(145deg, #fff, #fef9e7);
-  border: none;
-  border-radius: 20px;
-  padding: 16px 12px 10px;
-  min-width: 72px;
-  box-shadow: 0 8px 24px rgba(212,160,23,0.2), 0 2px 0 rgba(212,160,23,0.3) inset;
-  position: relative; overflow: hidden;
-}
-.cd-box::before {
-  content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(240,192,64,0.08), transparent);
-}
-.cd-num {
-  display: block;
-  font-family: 'Cinzel', serif;
-  font-size: 2.1rem;
-  color: var(--purp-bg);
-  line-height: 1;
-  text-shadow: 0 2px 8px rgba(92,45,158,0.15);
-  transition: transform .15s;
-}
-.cd-num.tick { transform: scale(1.18); }
-.cd-lbl { display: block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-top: 5px; font-weight: 700; }
-.cd-title {
-  font-family: 'Cinzel', serif;
-  font-size: .82rem; color: var(--purp-mid);
-  letter-spacing: .12em; margin: 6px 0 2px;
-}
-.cd-event-label {
-  display: flex; align-items: center; gap: 8px;
-  justify-content: center;
-  font-size: .7rem; letter-spacing: .2em; text-transform: uppercase;
-  color: var(--purp-mid); margin-bottom: 4px; font-weight: 600;
-}
+/* TIMELINE */
+.tl{width:100%;max-width:420px;margin:14px auto 0;position:relative}
+.ti{position:relative;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;padding:16px 0}
+.ti:nth-child(even) .tx{grid-column:3;grid-row:1;text-align:left;transform:translateX(-14px)}
+.ti:nth-child(odd) .tx{grid-column:1;grid-row:1;text-align:right;transform:translateX(14px)}
+.ic{grid-column:2;grid-row:1;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;background:#2b2150;border:2px solid #4a3f78;filter:grayscale(1) brightness(.6);transition:.4s;position:relative;z-index:2}
+.ic.on{background:linear-gradient(135deg,var(--mag),#a02cff);border-color:#fff;filter:none;box-shadow:0 0 22px rgba(255,46,154,.8);transform:scale(1.1)}
+.tx{opacity:0;transition:.5s}
+.tx.on{opacity:1;transform:none!important}
+.tx b{display:block;font-family:'Cinzel Decorative',cursive;font-size:.85rem;color:var(--cian);text-shadow:0 0 10px rgba(34,229,255,.7)}
+.tx span{font-size:1.15rem;line-height:1.3}
+.seg{position:absolute;left:50%;width:3px;margin-left:-1.5px;background:linear-gradient(var(--mag),var(--cian));box-shadow:0 0 10px var(--mag);transform:scaleY(0);transform-origin:top;transition:transform .6s ease;z-index:1;border-radius:2px}
+.seg.on{transform:scaleY(1)}
 
-/* ══ PORTADA MEJORADA ══ */
-.portada-glow {
-  position: absolute; inset: 0; z-index: 0;
-  background: radial-gradient(ellipse at center, rgba(109,40,133,0.5) 0%, transparent 70%);
-  animation: glowPulse 4s ease-in-out infinite;
-}
-@keyframes glowPulse { 0%,100%{ opacity:.6; } 50%{ opacity:1; } }
-.foto-frame { position: relative; display: inline-block; margin: 20px 0 16px; }
-.foto-frame img { width: min(220px,62vw); border-radius: 14px; display: block; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
-.foto-border { position: absolute; inset: -12px; border: 2px solid var(--gold); border-radius: 22px; pointer-events: none; }
-.foto-shimmer {
-  position: absolute; inset: -12px; border-radius: 22px;
-  background: linear-gradient(45deg, transparent 30%, rgba(240,192,64,0.3) 50%, transparent 70%);
-  background-size: 200% 200%;
-  animation: shimmer 3s ease-in-out infinite;
-  pointer-events: none;
-}
-@keyframes shimmer { 0%{ background-position:200% 200%; } 100%{ background-position:-200% -200%; } }
-.fc { position: absolute; width: 28px; height: 28px; border-color: var(--gold-l); border-style: solid; }
-.fc-tl{top:-14px;left:-14px;border-width:3px 0 0 3px;border-radius:4px 0 0 0;}
-.fc-tr{top:-14px;right:-14px;border-width:3px 3px 0 0;border-radius:0 4px 0 0;}
-.fc-bl{bottom:-14px;left:-14px;border-width:0 0 3px 3px;border-radius:0 0 0 4px;}
-.fc-br{bottom:-14px;right:-14px;border-width:0 3px 3px 0;border-radius:0 0 4px 0;}
-.portada-15 {
-  font-family: 'Cinzel', serif;
-  font-size: clamp(4rem,18vw,7rem);
-  color: transparent;
-  background: linear-gradient(135deg, var(--gold-l), #fff7d0, var(--gold));
-  -webkit-background-clip: text; background-clip: text;
-  line-height: 1; text-shadow: none;
-  filter: drop-shadow(0 4px 20px rgba(212,160,23,0.5));
-  animation: num15 3s ease-in-out infinite;
-}
-@keyframes num15 { 0%,100%{ filter:drop-shadow(0 4px 20px rgba(212,160,23,0.5)); } 50%{ filter:drop-shadow(0 4px 35px rgba(212,160,23,0.9)); } }
+/* DRESS */
+.dress{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.dress div{flex:1 1 130px;padding:14px 10px;border-radius:16px;border:1.5px solid rgba(245,197,66,.5);font-size:1.05rem;line-height:1.3}
+.dress div span{display:block;font-size:1.8rem}
 
-/* ══ PADRES ══ */
-.padres-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; width: 100%; }
-.padre-card { background: rgba(255,255,255,.07); border: 1px solid rgba(240,192,64,.25); border-radius: 20px; padding: 16px 14px; }
-.padre-rol { font-family: 'Cinzel', serif; font-size: .72rem; letter-spacing: .2em; color: var(--gold-l); text-transform: uppercase; margin-bottom: 8px; opacity: .8; }
-.padre-nombre { font-family: 'Great Vibes', cursive; font-size: 2.4rem; color: #fdf8e8; line-height: 1.2; }
+/* GALERÍA */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:100%;max-width:460px;margin-top:18px}
+.gal div{aspect-ratio:3/4;border-radius:16px;overflow:hidden;border:2px solid rgba(255,46,154,.5);box-shadow:0 0 18px rgba(255,46,154,.25);background:linear-gradient(135deg,#2a0a5e,#12073a);display:flex;align-items:center;justify-content:center;font-size:2rem}
+.gal div:first-child{grid-column:1/-1;aspect-ratio:4/3}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* ══ EVENTOS ══ */
-.event-cards { display: flex; flex-direction: column; gap: 20px; width: 100%; max-width: 440px; }
-.event-card { background: var(--blanco); backdrop-filter: blur(12px); border-radius: 28px; padding: 28px 24px; border: 2px solid var(--gold); box-shadow: 0 12px 36px rgba(0,0,0,.25); }
-.info-row { display: flex; align-items: flex-start; gap: 10px; text-align: left; margin: 8px 0; font-size: clamp(1.05rem,3.5vw,1.2rem); line-height: 1.55; }
-.info-row .ico { font-size: 1.2rem; min-width: 24px; margin-top: 1px; }
+/* FORM */
+.inp{width:100%;padding:14px 18px;margin:7px 0;border-radius:14px;border:1.5px solid rgba(34,229,255,.5);background:rgba(255,255,255,.95);font:inherit;font-size:1.15rem;color:#1a0840;outline:none}
+.inp:focus{box-shadow:0 0 0 3px rgba(34,229,255,.35)}
 
-/* ══ TIMELINE ══ */
-.vtl-section { width: 100%; max-width: 400px; margin: 16px auto 0; position: relative; padding: 10px 0; }
-#vtl-canvas { position: absolute; left: 50%; transform: translateX(-50%); top: 0; pointer-events: none; z-index: 0; }
-.vtl-item { display: flex; align-items: center; justify-content: center; position: relative; padding: 16px 0; z-index: 1; }
-.vtl-item:nth-child(odd)  { flex-direction: row; }
-.vtl-item:nth-child(even) { flex-direction: row-reverse; }
-.vtl-icon {
-  width: 52px; height: 52px; border-radius: 50%;
-  background: #bbaac8; border: 3px solid rgba(255,255,255,0.25); box-shadow: none;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.4rem; flex-shrink: 0; position: relative; z-index: 2;
-  filter: grayscale(1) brightness(0.65);
-  transition: background .4s, border-color .4s, box-shadow .4s, filter .4s, transform .3s;
-}
-.vtl-icon.lit { background: linear-gradient(135deg, var(--gold-l), var(--gold)); border-color: white; box-shadow: 0 4px 20px rgba(212,160,23,.55), 0 0 0 5px rgba(212,160,23,.15); filter: none; transform: scale(1.1); animation: iconPop .45s cubic-bezier(.34,1.56,.64,1) forwards; }
-@keyframes iconPop { 0%{transform:scale(.6)} 70%{transform:scale(1.2)} 100%{transform:scale(1)} }
-.vtl-connector { width: 28px; height: 2px; flex-shrink: 0; background: var(--gold); opacity: 0; transition: opacity .35s ease; }
-.vtl-item:nth-child(odd)  .vtl-connector { background: linear-gradient(to left, var(--gold), rgba(212,160,23,.1)); }
-.vtl-item:nth-child(even) .vtl-connector { background: linear-gradient(to right, var(--gold), rgba(212,160,23,.1)); }
-.vtl-connector.lit { opacity: 1; }
-.vtl-body { flex: 1; padding: 0 10px; opacity: 0; transition: opacity .45s ease, transform .45s ease; }
-.vtl-item:nth-child(odd)  .vtl-body { text-align: right; transform: translateX(12px); }
-.vtl-item:nth-child(even) .vtl-body { text-align: left;  transform: translateX(-12px); }
-.vtl-body.lit { opacity: 1 !important; transform: translateX(0) !important; }
-.vtl-spacer { flex: 1; }
-.vtl-time { font-family:'Cinzel',serif; font-size:.96rem; letter-spacing:.1em; color:var(--gold); font-weight:700; }
-.vtl-desc  { font-size:1.08rem; color:#444; line-height:1.35; margin-top:3px; }
+/* PISTA FINAL */
+.pista{position:absolute;left:0;right:0;bottom:0;height:120px;background:repeating-conic-gradient(var(--mag) 0 25%,var(--cian) 0 50%,var(--oro) 0 75%,#7a2cff 0) 0 0/64px 64px;opacity:.55;transform:perspective(300px) rotateX(55deg);transform-origin:bottom;animation:pulso 2.4s steps(2) infinite;-webkit-mask-image:linear-gradient(transparent,#000 80%);mask-image:linear-gradient(transparent,#000 80%)}
+@keyframes pulso{50%{filter:hue-rotate(80deg) brightness(1.25)}}
 
-/* ══ DRESS CODE ══ */
-.dress-grid { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 14px; }
-.dress-item { display: flex; flex-direction: column; align-items: center; gap: 6px; border: 1.5px solid rgba(212,160,23,.4); border-radius: 16px; padding: 14px 18px; font-size: .9rem; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; }
-
-/* ══ GALERÍA CON LIGHTBOX ══ */
-.galeria-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; width: 100%; max-width: 440px; margin-top: 20px; }
-.galeria-item { position: relative; border-radius: 18px; overflow: hidden; aspect-ratio: 3/4; border: 2px solid rgba(212,160,23,.35); box-shadow: 0 8px 24px rgba(0,0,0,.35); cursor: pointer; }
-.galeria-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
-.galeria-item:hover img { transform: scale(1.08); }
-.galeria-item.grande { grid-column: 1/-1; aspect-ratio: 4/3; }
-.galeria-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg,rgba(59,26,110,.6),rgba(92,45,158,.4)); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px; color: rgba(240,192,64,.5); font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; }
-.galeria-placeholder span { font-size: 2rem; }
-.galeria-overlay {
-  position: absolute; inset: 0; background: rgba(212,160,23,0);
-  display: flex; align-items: center; justify-content: center;
-  transition: background .3s;
-}
-.galeria-item:hover .galeria-overlay { background: rgba(212,160,23,0.12); }
-.galeria-zoom-icon { font-size: 1.8rem; opacity: 0; transform: scale(0.5); transition: all .3s; }
-.galeria-item:hover .galeria-zoom-icon { opacity: 1; transform: scale(1); }
-
-/* ══ LIGHTBOX ══ */
-#lightbox {
-  display: none; position: fixed; inset: 0; z-index: 9998;
-  background: rgba(10,4,25,0.97);
-  align-items: center; justify-content: center;
-  flex-direction: column;
-}
-#lightbox.open { display: flex; animation: lbFade .3s ease; }
-@keyframes lbFade { from{ opacity:0; } to{ opacity:1; } }
-#lb-img {
-  max-width: 90vw; max-height: 80vh;
-  border-radius: 16px;
-  border: 2px solid rgba(212,160,23,0.4);
-  box-shadow: 0 0 80px rgba(212,160,23,0.2);
-  animation: lbZoom .3s cubic-bezier(.34,1.56,.64,1);
-}
-@keyframes lbZoom { from{ transform:scale(0.85); } to{ transform:scale(1); } }
-#lb-close {
-  position: absolute; top: 16px; right: 20px;
-  background: rgba(212,160,23,0.15); border: 1px solid rgba(212,160,23,0.4);
-  color: var(--gold-l); font-size: 1.5rem; width: 44px; height: 44px;
-  border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;
-  transition: all .2s;
-}
-#lb-close:hover { background: rgba(212,160,23,0.3); transform: scale(1.1); }
-#lb-caption {
-  font-family: 'Great Vibes', cursive; font-size: 1.5rem;
-  color: var(--gold-l); margin-top: 16px;
-  text-shadow: 0 0 20px rgba(212,160,23,0.4);
-}
-
-/* ══ RSVP MEJORADO ══ */
-.rsvp-wrap {
-  background: linear-gradient(145deg, rgba(30,10,60,0.95), rgba(42,16,80,0.95));
-  border: 2px solid rgba(212,160,23,0.4);
-  border-radius: 36px; padding: 36px 28px;
-  width: 100%; max-width: 440px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 80px rgba(212,160,23,0.05);
-  position: relative; overflow: hidden;
-}
-.rsvp-wrap::before {
-  content: '';
-  position: absolute; top: -50%; left: -50%;
-  width: 200%; height: 200%;
-  background: radial-gradient(circle at 50% 0%, rgba(212,160,23,0.06), transparent 60%);
-  pointer-events: none;
-}
-.rsvp-input {
-  width: 100%; padding: 15px 20px; margin: 7px 0;
-  border-radius: 20px;
-  border: 1.5px solid rgba(212,160,23,0.25);
-  background: rgba(255,255,255,0.06);
-  font-family: 'Lora', serif;
-  font-size: 1.1rem; color: #f0eaff; outline: none;
-  transition: border-color .2s, box-shadow .2s, background .2s;
-}
-.rsvp-input::placeholder { color: rgba(240,234,255,0.4); }
-.rsvp-input:focus {
-  border-color: var(--gold);
-  background: rgba(255,255,255,0.1);
-  box-shadow: 0 0 0 3px rgba(212,160,23,0.12);
-}
-.rsvp-label {
-  font-family: 'Cinzel', serif;
-  font-size: .65rem; letter-spacing: .2em;
-  color: var(--gold-l); text-align: left;
-  display: block; margin: 10px 0 3px 4px;
-  opacity: 0.8;
-}
-.rsvp-stars { font-size: 1.4rem; margin-bottom: 8px; }
-
-/* ══ HASHTAG ══ */
-.hashtag { font-family: 'Cinzel', serif; font-size: clamp(1.1rem,4.5vw,1.6rem); color: var(--gold-l); letter-spacing: .05em; text-shadow: 0 0 20px rgba(212,160,23,.4); }
-
-/* ══ FADE-IN ══ */
-.fade-up { opacity: 0; transform: translateY(26px); transition: opacity .75s ease, transform .75s ease; }
-.fade-up.in { opacity: 1; transform: translateY(0); }
-
-/* ══ SPARKLE CANVAS ══ */
-#sparkle-canvas {
-  position: fixed; inset: 0; pointer-events: none; z-index: 997;
-  width: 100%; height: 100%;
-}
-
-/* ══ CONFETTI ══ */
-#confetti-canvas {
-  position: fixed; inset: 0; pointer-events: none; z-index: 9998;
-  width: 100%; height: 100%; display: none;
-}
-
-@media(max-width:400px) { .burbuja{padding:24px 16px;} .cd-num{font-size:1.7rem;} .padres-grid{grid-template-columns:1fr;} }
-
-/* ══ OVERLAY SUAVE PARA LEGIBILIDAD ══ */
-.sec::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: rgba(10,4,25,0.28);
-  pointer-events: none; z-index: 1;
-}
-.sec-content { z-index: 2; }
+/* MÚSICA */
+#mus{position:fixed;top:14px;right:14px;z-index:998;width:50px;height:50px;border-radius:50%;border:2px solid var(--oro);background:var(--vio);display:none;align-items:center;justify-content:center;gap:3px;box-shadow:0 0 16px rgba(245,197,66,.5)}
+#mus.v{display:flex}
+#mus i{width:4px;background:var(--oro);border-radius:2px;animation:eq .9s ease-in-out infinite}
+#mus i:nth-child(1){height:10px}#mus i:nth-child(2){height:18px;animation-delay:.2s}#mus i:nth-child(3){height:12px;animation-delay:.4s}
+#mus.pausa i{animation-play-state:paused;opacity:.5}
+@keyframes eq{50%{transform:scaleY(.3)}}
+#chispas{position:fixed;inset:0;pointer-events:none;z-index:1}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 
-<!-- SPARKLE CANVAS (touch) -->
-<canvas id="sparkle-canvas"></canvas>
-
-<!-- CONFETTI CANVAS -->
-<canvas id="confetti-canvas"></canvas>
-
-<!-- LIGHTBOX -->
-<div id="lightbox">
-  <button id="lb-close" onclick="closeLightbox()">✕</button>
-  <img id="lb-img" src="" alt="">
-  <div id="lb-caption">Paolina Giovanna ✦ XV</div>
-</div>
-
-<!-- ══════════════ SOBRE ══════════════ -->
-<div id="sobre-screen">
-  <canvas id="sobre-particles"></canvas>
-  <div class="sobre-wrap">
-    <svg class="sobre-svg" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <pattern id="lineas" patternUnits="userSpaceOnUse" width="20" height="20">
-          <rect width="20" height="20" fill="#fef3b0"/>
-          <line x1="0" y1="10" x2="20" y2="10" stroke="rgba(212,160,23,0.15)" stroke-width="0.5"/>
-          <line x1="10" y1="0" x2="10" y2="20" stroke="rgba(212,160,23,0.15)" stroke-width="0.5"/>
-        </pattern>
-      </defs>
-      <ellipse cx="140" cy="195" rx="115" ry="7" fill="rgba(0,0,0,0.2)"/>
-      <rect x="10" y="60" width="260" height="130" rx="10" fill="url(#lineas)" stroke="#d4a017" stroke-width="2.5"/>
-      <line x1="10" y1="60" x2="140" y2="140" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
-      <line x1="270" y1="60" x2="140" y2="140" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
-      <line x1="10" y1="190" x2="140" y2="140" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
-      <line x1="270" y1="190" x2="140" y2="140" stroke="#d4a017" stroke-width="1" opacity="0.3"/>
-      <circle cx="140" cy="140" r="22" fill="#6d2885" stroke="#d4a017" stroke-width="2"/>
-      <text x="140" y="148" text-anchor="middle" fill="#f0c040" font-size="18" font-family="serif">✦</text>
-      <g id="sobre-flap" style="transform-origin:140px 60px;">
-        <path d="M10,60 L140,132 L270,60 Z" fill="#fde88a" stroke="#d4a017" stroke-width="2" stroke-linejoin="round"/>
-      </g>
-      <text x="18" y="78" fill="#d4a017" font-size="10" opacity="0.6">✦</text>
-      <text x="255" y="78" fill="#d4a017" font-size="10" opacity="0.6">✦</text>
-      <text x="18" y="184" fill="#d4a017" font-size="10" opacity="0.6">✦</text>
-      <text x="255" y="184" fill="#d4a017" font-size="10" opacity="0.6">✦</text>
-    </svg>
-    <p class="sobre-titulo">Paolina Giovanna</p>
-    <p class="sobre-sub">✦ &nbsp; mis quince años &nbsp; ✦</p>
-    <button class="btn-abrir" onclick="abrirInvitacion()">✉ &nbsp; ABRIR INVITACIÓN</button>
+<!-- ENTRADA -->
+<div id="sobre">
+  <div class="pulsera">
+    <div class="bola"><div class="b"></div></div>
+    <p class="chico">Tu entrada para la noche de</p>
+    <h1 class="nombres" data-k="pareja"></h1>
+    <div class="linea"></div>
+    <p class="cita" style="font-size:1.25rem;margin-bottom:18px">Viernes y sábado bailamos. Esta vez bailamos diez años de casados.</p>
+    <button class="btn neon" onclick="abrir()">Entrar a la pista</button>
   </div>
 </div>
 
-<!-- ══════════════ MAIN ══════════════ -->
-<div id="main-content">
+<button id="mus" class="pausa" onclick="musica()" aria-label="Música"><i></i><i></i><i></i></button>
+<canvas id="chispas"></canvas>
 
-<button id="musicBtn" class="paused" onclick="toggleMusic()" title="Música">
-  <div class="bar-wrap">
-    <div class="mbar"></div><div class="mbar"></div>
-    <div class="mbar"></div><div class="mbar"></div>
-    <div class="mbar"></div>
-  </div>
-</button>
+<main id="main" style="display:none">
 
-<!-- NAVEGACIÓN FLOTANTE -->
-<nav id="nav-float">
-  <button class="nav-btn" onclick="navTo(0)" title="Inicio">🏠</button>
-  <div class="nav-sep"></div>
-  <button class="nav-btn" onclick="navTo(1)" title="Cuenta regresiva">⏳</button>
-  <button class="nav-btn" onclick="navTo(2)" title="Mis padres">🕊️</button>
-  <button class="nav-btn" onclick="navTo(3)" title="Misa">⛪</button>
-  <button class="nav-btn" onclick="navTo(4)" title="Fiesta">🎉</button>
-  <div class="nav-sep"></div>
-  <button class="nav-btn" onclick="navTo(5)" title="Galería">📸</button>
-  <button class="nav-btn" onclick="navTo(6)" title="Confirmar">💌</button>
-</nav>
-
-<!-- S1 · PORTADA -->
-<section class="sec parallax" id="sec-0" style="background-image:url('portada.jpg');">
-  <div class="portada-glow"></div>
-  <div class="sec-content fade-up" style="gap:0;">
-    <p class="subtitulo" style="color:var(--lace);margin-bottom:10px;letter-spacing:.5em;">✦ &nbsp; BIENVENIDOS A &nbsp; ✦</p>
-    <div class="portada-15">XV</div>
-    <div class="foto-frame" style="margin:10px 0 14px;">
-      <img src="portada.jpg" alt="Paolina Giovanna" onerror="this.parentElement.style.display='none'">
-      <div class="foto-border"></div>
-      <div class="foto-shimmer"></div>
-      <div class="fc fc-tl"></div><div class="fc fc-tr"></div>
-      <div class="fc fc-bl"></div><div class="fc fc-br"></div>
+<!-- PORTADA -->
+<section class="sec n1 haces">
+  <div class="cont">
+    <p class="titulo" style="margin-bottom:6px">10 años de casados</p>
+    <div style="position:relative;margin:10px 0 20px">
+      <img src="portada.jpg" alt="Patricia y Alfredo" onerror="this.parentElement.style.display='none'" style="width:min(250px,66vw);border-radius:14px;display:block;border:3px solid var(--mag);box-shadow:0 0 26px rgba(255,46,154,.7),0 0 60px rgba(34,229,255,.3)">
     </div>
-    <h1 class="nombre">Paolina<br>Giovanna</h1>
-    <div class="ornline" style="max-width:320px;width:90%;margin:14px auto;">
-      <span style="color:var(--gold);">✦</span>
-      <span class="subtitulo" style="color:var(--gold);font-size:.96rem;">MIS QUINCE AÑOS</span>
-      <span style="color:var(--gold);">✦</span>
-    </div>
-    <button id="playBtn" class="btn btn-dorado" onclick="toggleMusic()" style="margin-top:8px;">🎵 &nbsp;Reproducir Música</button>
+    <h2 class="nombres"><span data-k="novia"></span><br><i>y</i><br><span data-k="novio"></span></h2>
+    <p class="chico" style="margin-top:8px" data-k="completos"></p>
+    <div class="linea"></div>
+    <p class="fecha" data-k="fechaCorta"></p>
+    <button class="btn" style="margin-top:22px" onclick="musica()">Poner música</button>
   </div>
 </section>
 
-<!-- S2 · CUENTA REGRESIVA -->
-<section class="sec parallax" id="sec-1" style="background-image:url('fondo-mov2.jpg');min-height:auto;padding:70px 24px 100px;">
-  <div class="sec-content fade-up">
-    <div class="burbuja burbuja-dorada" style="max-width:420px;">
-      <p style="font-size:2rem;margin-bottom:4px;">✨</p>
-      <h2 style="font-family:'Cinzel',serif;font-size:clamp(1rem,4vw,1.3rem);color:var(--purp-bg);letter-spacing:.12em;margin-bottom:20px;">FALTAN PARA MI GRAN FIESTA</h2>
-      <div class="cd-event-label"><span>🎉</span><span>FIESTA · 2 DE MAYO 2026</span></div>
-      <div class="cd-wrap" id="cd-fiesta"></div>
+<!-- CUENTA REGRESIVA -->
+<section class="sec corta n2">
+  <div class="cont">
+    <div class="card cian">
+      <h3 class="titulo">Faltan</h3>
+      <div class="cd" id="cd"></div>
+      <p class="chico" style="margin-top:14px">para festejar 10 años juntos</p>
     </div>
   </div>
 </section>
 
-<!-- S3 · FRASE -->
-<section class="sec pan-bg" style="background-image:url('fondo-mov1.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja burbuja-purpura" style="max-width:420px;">
-      <div style="font-size:2rem;margin-bottom:12px;">✨</div>
-      <p class="cita" style="color:#f0eaff;">"Mis quince años marcan el inicio de una nueva etapa en mi vida, y estoy emocionada de compartir esta celebración con ustedes."</p>
-      <div class="ornline ornline-inv" style="margin:16px 0 0;">
-        <span style="color:var(--gold-l);font-size:.8rem;">✦</span>
-        <span style="font-size:.65rem;letter-spacing:.35em;color:var(--gold-l);text-transform:uppercase;">Paolina Giovanna</span>
-        <span style="color:var(--gold-l);font-size:.8rem;">✦</span>
+<!-- FRASE -->
+<section class="sec n3 haces">
+  <div class="cont">
+    <div class="card">
+      <p class="cita">Hace diez años dijimos que sí, y desde entonces cada viernes y cada sábado nos encontró en la pista. Hoy lo celebramos con las personas que más queremos.</p>
+      <div class="linea"></div>
+      <p class="titulo" style="margin:0" data-k="pareja"></p>
+    </div>
+  </div>
+</section>
+
+<!-- FIESTA -->
+<section class="sec n2">
+  <div class="cont">
+    <div class="card cian">
+      <h3 class="titulo">La fiesta</h3>
+      <p class="fecha" data-k="fechaLarga"></p>
+      <div class="linea"></div>
+      <div class="fila" id="fila-hora"><em>🕘</em><span>Desde las <b data-k="hora"></b> hs</span></div>
+      <div class="fila"><em>📍</em><span><b data-k="direccion"></b><span class="chico" style="display:block" data-k="salon"></span></span></div>
+      <a id="mapa" class="btn borde" target="_blank" rel="noopener" style="margin-top:12px">Ver ubicación</a>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="sec n1">
+  <div class="cont">
+    <div class="card" style="max-width:480px">
+      <h3 class="titulo">Cómo va a ser la noche</h3>
+      <div class="tl" id="tl">
+        <div class="ti"><div class="tx"><b>Brindis</b><span>Barra caribeña: tragos, cerveza y fernet</span></div><div class="ic">🍹</div></div>
+        <div class="ti"><div class="tx"><b>Buffet</b><span>Brusquetas, sándwiches, empanadas y pizzas</span></div><div class="ic">🍕</div></div>
+        <div class="ti"><div class="tx"><b>Sándwiches</b><span>Isla de milanesitas con aderezos, lechuga y tomate</span></div><div class="ic">🥪</div></div>
+        <div class="ti"><div class="tx"><b>Postre</b><span>Brownie con helado, salsa y crocantes. Después, café</span></div><div class="ic">🍨</div></div>
+        <div class="ti"><div class="tx"><b>A bailar</b><span>DJ y pista hasta que aguanten</span></div><div class="ic">🪩</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- S4 · PADRES -->
-<section class="sec parallax" id="sec-2" style="background-image:url('fondo-bendicion.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja burbuja-purpura" style="max-width:440px;">
-      <div style="font-size:1.8rem;margin-bottom:8px;">🕊️</div>
-      <h3 style="font-family:'Cinzel',serif;font-size:clamp(.85rem,3.5vw,1.1rem);color:var(--gold-l);letter-spacing:.15em;margin-bottom:4px;">Con la Bendición de</h3>
-      <p style="font-size:1.1rem;color:rgba(240,234,255,.7);letter-spacing:.08em;margin-bottom:16px;font-style:italic;">Mis papás y toda mi familia</p>
-      <div class="padres-grid">
-        <div class="padre-card">
-          <div class="padre-rol">👩 Mamá</div>
-          <div class="padre-nombre">María Inés<br>Lanieri</div>
-        </div>
-        <div class="padre-card">
-          <div class="padre-rol">👨 Papá</div>
-          <div class="padre-nombre">Gustavo<br>Bossini</div>
-        </div>
-      </div>
-      <div class="ornline ornline-inv" style="margin-top:20px;">
-        <span style="color:var(--gold-l);font-size:.8rem;">✦</span>
-        <span style="font-size:.65rem;letter-spacing:.3em;color:rgba(240,192,64,.6);text-transform:uppercase;">los esperamos</span>
-        <span style="color:var(--gold-l);font-size:.8rem;">✦</span>
+<!-- DRESS CODE -->
+<section class="sec corta n3">
+  <div class="cont">
+    <div class="card">
+      <h3 class="titulo">Dress code</h3>
+      <p class="cita" style="font-size:1.3rem">Elegante sport. Y zapatos cómodos, porque esa noche se baila hasta el final.</p>
+      <div class="dress">
+        <div style="flex:0 1 220px"><span>🪩</span>Ganas de bailar</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- S5 · MISA -->
-<section class="sec parallax" id="sec-3" style="background-image:url('fondo-bendicion.jpg');min-height:auto;padding:70px 24px 100px;">
-  <div class="sec-content fade-up">
-    <div class="burbuja" style="max-width:370px;">
-      <p style="font-size:2rem;margin-bottom:8px;">⛪</p>
-      <p class="subtitulo" style="color:var(--purp-bg);font-size:.96rem;letter-spacing:.42em;margin-bottom:10px;">LA MISA</p>
-      <h2 style="font-family:'Cinzel',serif;font-size:clamp(2rem,8vw,2.8rem);color:var(--purp-bg);line-height:1.1;letter-spacing:.08em;">27 · 04<br><span style="font-size:55%;opacity:.65;">2026</span></h2>
-      <div class="ornline"><span style="color:var(--gold);">✦</span></div>
-      <p style="font-size:1.15rem;color:#555;">Lunes · 20:00 hs</p>
-      <p style="font-size:1.02rem;color:var(--purp-mid);margin-top:4px;letter-spacing:.08em;font-weight:600;">Parroquia del Inmaculado<br>Corazón de María</p>
-      <p style="font-size:.92rem;color:#888;margin-top:4px;">Santiago 871, Tucumán</p>
-      <a href="https://maps.google.com/?q=Santiago+871+San+Miguel+de+Tucuman" target="_blank" class="btn btn-mapa" style="margin-top:16px;display:inline-block;">🗺 Ver Ubicación</a>
+<!-- GALERÍA -->
+<section class="sec corta n2">
+  <div class="cont">
+    <h3 class="nombres" style="font-size:clamp(2.4rem,10vw,3.6rem)">Nuestra historia</h3>
+    <div class="gal">
+      <div><img src="portada.jpg" alt="" onerror="this.remove()"></div>
+      <div><img src="foto2.jpg" alt="" onerror="this.remove()"></div>
+      <div><img src="foto3.jpg" alt="" onerror="this.remove()"></div>
+      <div><img src="foto4.jpg" alt="" onerror="this.remove()"></div>
+      <div><img src="foto5.jpg" alt="" onerror="this.remove()"></div>
     </div>
   </div>
 </section>
 
-<!-- S5b · FIESTA -->
-<section class="sec parallax" id="sec-3b" style="background-image:url('fondo-fechas.jpg');min-height:auto;padding:70px 24px 100px;">
-  <div class="sec-content fade-up">
-    <div class="burbuja" style="max-width:370px;">
-      <p style="font-size:2rem;margin-bottom:8px;">🎉</p>
-      <p class="subtitulo" style="color:var(--purp-bg);font-size:.96rem;letter-spacing:.42em;margin-bottom:10px;">LA GRAN FIESTA</p>
-      <h2 style="font-family:'Cinzel',serif;font-size:clamp(2rem,8vw,2.8rem);color:var(--purp-bg);line-height:1.1;letter-spacing:.08em;">02 · 05<br><span style="font-size:55%;opacity:.65;">2026</span></h2>
-      <div class="ornline"><span style="color:var(--gold);">✦</span></div>
-      <p style="font-size:1.15rem;color:#555;">Sábado · 22:00 hs</p>
-      <p style="font-size:1.02rem;color:var(--purp-mid);margin-top:4px;letter-spacing:.12em;font-weight:600;text-transform:uppercase;">Salón Conticello</p>
-      <p style="font-size:.92rem;color:#888;margin-top:4px;">Ruta 9 Km 1301 · Tafí Viejo</p>
-      <a href="https://www.google.com/maps/place/Conticello+sal%C3%B3n+de+fiestas/@-26.7687986,-65.2215283,17z/data=!4m14!1m7!3m6!1s0x94225d21eb8f708b:0xe0a4eb3b91f6200!2sConticello+sal%C3%B3n+de+fiestas!8m2!3d-26.7688034!4d-65.2189534!16s%2Fg%2F11nntyfpfd!3m5!1s0x94225d21eb8f708b:0xe0a4eb3b91f6200!8m2!3d-26.7688034!4d-65.2189534!16s%2Fg%2F11nntyfpfd?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-mapa" style="margin-top:16px;display:inline-block;">🗺 Ver Ubicación</a>
+<!-- REGALO -->
+<section class="sec corta n3">
+  <div class="cont">
+    <div class="card">
+      <h3 class="titulo">Regalo</h3>
+      <p class="cita" style="font-size:1.25rem;margin-bottom:16px">Tu presencia ya es nuestro mejor regalo. Si querés sumar algo más, podés hacerlo por transferencia.</p>
+      <p class="chico" style="margin-bottom:4px">Alias</p>
+      <p class="fecha" style="font-size:1.3rem;word-break:break-all" data-k="alias"></p>
+      <button class="btn neon" style="margin:12px 0 22px" onclick="copiar(CFG.alias)">Copiar alias</button>
+      <p class="chico" style="margin-bottom:4px">CBU</p>
+      <p class="fecha" style="font-size:1.05rem;word-break:break-all" data-k="cbu"></p>
+      <button class="btn borde" style="margin-top:12px" onclick="copiar(CFG.cbu)">Copiar CBU</button>
+      <p id="ok" class="chico" style="display:none;margin-top:14px;color:var(--cian)">Copiado</p>
     </div>
   </div>
 </section>
 
-
-<!-- S7 · ITINERARIO -->
-<section class="sec parallax" style="background-image:url('fondo-itinerario.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja" style="max-width:440px;">
-      <h3 class="titulo-sec" style="margin-bottom:4px;">Te compartimos los detalles</h3>
-      <div class="ornline"><span style="color:var(--gold);">✦</span></div>
-      <div class="vtl-section" id="vtl">
-        <canvas id="vtl-canvas"></canvas>
-        <div class="vtl-item" data-idx="0">
-          <div class="vtl-body"><div class="vtl-time">22:00 hs</div><div class="vtl-desc">Recepción</div></div>
-          <div class="vtl-connector"></div>
-          <div class="vtl-icon">🥂</div>
-          <div class="vtl-spacer"></div>
-        </div>
-        <div class="vtl-item" data-idx="1">
-          <div class="vtl-spacer"></div>
-          <div class="vtl-icon">👸</div>
-          <div class="vtl-connector"></div>
-          <div class="vtl-body"><div class="vtl-time">22:30 hs</div><div class="vtl-desc">Ingreso Paolina</div></div>
-        </div>
-        <div class="vtl-item" data-idx="2">
-          <div class="vtl-body"><div class="vtl-time">23:30 hs</div><div class="vtl-desc">Cena</div></div>
-          <div class="vtl-connector"></div>
-          <div class="vtl-icon">🍽️</div>
-          <div class="vtl-spacer"></div>
-        </div>
-        <div class="vtl-item" data-idx="3">
-          <div class="vtl-spacer"></div>
-          <div class="vtl-icon">🎂</div>
-          <div class="vtl-connector"></div>
-          <div class="vtl-body"><div class="vtl-time">00:30 hs</div><div class="vtl-desc">Brindis y torta</div></div>
-        </div>
-        <div class="vtl-item" data-idx="4">
-          <div class="vtl-body"><div class="vtl-time">01:00 hs</div><div class="vtl-desc">Fiesta y baile 🌙</div></div>
-          <div class="vtl-connector"></div>
-          <div class="vtl-icon">🎵</div>
-          <div class="vtl-spacer"></div>
-        </div>
-      </div>
+<!-- RSVP -->
+<section class="sec corta n1">
+  <div class="cont">
+    <div class="card cian">
+      <h3 class="titulo">¿Venís a bailar?</h3>
+      <p class="chico" style="margin-bottom:12px">Confirmá tu asistencia por WhatsApp</p>
+      <input class="inp" id="r-n" placeholder="Nombre y apellido">
+      <input class="inp" id="r-c" type="number" min="1" placeholder="¿Cuántas personas van?">
+      <input class="inp" id="r-d" placeholder="Menú especial (celíaco, vegano…)">
+      <input class="inp" id="r-s" placeholder="Canción que no puede faltar">
+      <button class="btn wa" onclick="rsvp()">Confirmar por WhatsApp</button>
     </div>
   </div>
 </section>
 
-<!-- S8 · DRESS CODE -->
-<section class="sec pan-bg" style="background-image:url('fondo-mov2.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja burbuja-purpura" style="max-width:420px;">
-      <p style="font-size:1.8rem;margin-bottom:4px;">👗🤵</p>
-      <h3 style="font-family:'Cinzel',serif;font-size:clamp(.9rem,3.5vw,1.2rem);color:var(--gold-l);letter-spacing:.12em;margin-bottom:6px;">Dress Code</h3>
-      <div class="ornline ornline-inv"><span style="color:var(--gold-l);font-size:.8rem;">✦</span></div>
-      <p style="font-family:'Cinzel',serif;font-size:1.1rem;color:var(--gold-l);letter-spacing:.12em;margin-bottom:16px;">GALA</p>
-      <div class="dress-grid">
-        <div class="dress-item" style="background:rgba(255,255,255,.08);border-color:rgba(240,192,64,.4);color:#f0eaff;"><span style="font-size:1.8rem;">🤵</span>Caballeros<br>Traje</div>
-        <div class="dress-item" style="background:rgba(255,255,255,.08);border-color:rgba(240,192,64,.4);color:#f0eaff;"><span style="font-size:1.8rem;">👗</span>Damas<br>Vestido</div>
-        <div class="dress-item" style="background:rgba(220,50,50,.12);border-color:rgba(220,50,50,.45);color:#ffaaaa;"><span style="font-size:1.8rem;">🚫</span>Evitar<br>Color Rosa</div>
-      </div>
-      <p style="margin-top:16px;font-size:.97rem;font-style:italic;color:rgba(240,234,255,.65);line-height:1.5;">El color rosado es reservado para nuestra quinceañera 🩷</p>
-    </div>
+<!-- CIERRE -->
+<section class="sec n1 haces" style="min-height:70vh">
+  <div class="pista"></div>
+  <div class="cont" style="margin-bottom:90px">
+    <h2 class="nombres">Nos vemos en la pista</h2>
+    <div class="linea"></div>
+    <p class="fecha" style="font-size:1.4rem" data-k="pareja"></p>
   </div>
 </section>
 
-<!-- S9 · LUNA -->
-<section class="sec parallax" style="background-image:url('fondo-luna.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja burbuja-purpura" style="max-width:420px;">
-      <div style="font-size:2.4rem;margin-bottom:12px;">🌙✨</div>
-      <p class="cita" style="color:#f0eaff;">"Una noche, la luna, las estrellas, un deseo... Cumplo 15, y solo quiero una cosa:<br>Que estés ahí, conmigo"</p>
-    </div>
-  </div>
-</section>
-
-<!-- S10 · GALERÍA -->
-<section class="sec parallax" id="sec-5" style="background-image:url('fondo-luna.jpg');min-height:auto;padding:70px 24px 100px;">
-  <div class="sec-content fade-up">
-    <p class="subtitulo" style="color:var(--gold);font-size:1.1rem;letter-spacing:.45em;margin-bottom:4px;">✦ &nbsp; RECUERDOS &nbsp; ✦</p>
-    <h2 style="font-family:'Great Vibes',cursive;font-size:clamp(2.6rem,10vw,4.2rem);color:var(--gold-l);text-shadow:0 0 20px rgba(212,160,23,.4);margin-bottom:4px;">Paolina</h2>
-    <div class="ornline" style="max-width:300px;width:85%;margin:8px auto 0;"><span style="color:var(--gold);">✦</span></div>
-    <div class="galeria-grid">
-      <div class="galeria-item grande" onclick="openLightbox('portada.jpg','Paolina Giovanna ✦ XV')">
-        <img src="portada.jpg" alt="Paolina" style="object-position:center top;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="galeria-placeholder" style="display:none;"><span>📸</span>foto 1</div>
-        <div class="galeria-overlay"><span class="galeria-zoom-icon">🔍</span></div>
-      </div>
-      <div class="galeria-item" onclick="openLightbox('foto2.jpg','Mi historia ✦')">
-        <img src="foto2.jpg" alt="Paolina" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="galeria-placeholder"><span>📸</span>foto 2</div>
-        <div class="galeria-overlay"><span class="galeria-zoom-icon">🔍</span></div>
-      </div>
-      <div class="galeria-item" onclick="openLightbox('foto3.jpg','Paolina ✦')">
-        <img src="foto3.jpg" alt="Paolina" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="galeria-placeholder"><span>📸</span>foto 3</div>
-        <div class="galeria-overlay"><span class="galeria-zoom-icon">🔍</span></div>
-      </div>
-      <div class="galeria-item" onclick="openLightbox('foto4.jpg','Mis XV ✦')">
-        <img src="foto4.jpg" alt="Paolina" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="galeria-placeholder"><span>📸</span>foto 4</div>
-        <div class="galeria-overlay"><span class="galeria-zoom-icon">🔍</span></div>
-      </div>
-      <div class="galeria-item" onclick="openLightbox('foto5.jpg','Paolina Giovanna ✦')">
-        <img src="foto5.jpg" alt="Paolina" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <div class="galeria-placeholder"><span>📸</span>foto 5</div>
-        <div class="galeria-overlay"><span class="galeria-zoom-icon">🔍</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- S11 · HASHTAG -->
-<section class="sec pan-bg" style="background-image:url('fondo-mov1.jpg');">
-  <div class="sec-content fade-up">
-    <div class="burbuja" style="max-width:400px;">
-      <p class="subtitulo" style="color:var(--purp-bg);letter-spacing:.25em;font-size:1.15rem;margin-bottom:8px;">SUBÍ TU FOTO CON</p>
-      <p class="hashtag">#MIS15PAOLINA</p>
-      <p style="margin-top:14px;color:#888;font-size:1.15rem;">📸 &nbsp;¡Inmortalicemos esta noche mágica!</p>
-    </div>
-  </div>
-</section>
-
-<!-- S12 · CBU -->
-<section class="sec parallax" style="background-image:url('fondo-mov1.jpg');min-height:auto;padding:60px 24px 100px;">
-  <div class="sec-content fade-up">
-    <div class="burbuja" style="max-width:420px;">
-      <div style="font-size:2rem;margin-bottom:10px;">🎁</div>
-      <h3 class="titulo-sec" style="margin-bottom:12px;font-size:1.08rem;">Obsequio Digital</h3>
-      <p style="font-size:1.08rem;color:#555;margin-bottom:16px;line-height:1.5;">Para quienes deseen hacerme un regalo a través de cuenta digital:</p>
-      <button onclick="copiarCBU()" class="btn btn-purpura">📋 &nbsp;Copiar Alias / CBU</button>
-      <p id="cbu-msg" style="display:none;margin-top:12px;color:var(--purp-mid);font-size:1.1rem;font-weight:600;">✅ ¡Copiado al portapapeles!</p>
-    </div>
-  </div>
-</section>
-
-<!-- S13 · RSVP MEJORADO -->
-<section class="sec parallax" id="sec-6" style="background-image:url('fondo-fechas.jpg');min-height:auto;padding:70px 24px 100px;">
-  <div class="sec-content fade-up">
-    <div class="rsvp-wrap">
-      <div class="rsvp-stars">💌✨💌</div>
-      <h3 style="font-family:'Cinzel',serif;font-size:clamp(.95rem,4vw,1.3rem);color:var(--gold-l);letter-spacing:.12em;margin-bottom:4px;">¿Me acompañás?</h3>
-      <div class="ornline ornline-inv" style="margin:10px 0 18px;"><span style="color:var(--gold-l);font-size:.8rem;">✦</span></div>
-      <p style="font-size:1.08rem;color:rgba(240,234,255,.7);margin-bottom:20px;line-height:1.5;">Confirmá tu asistencia con un mensaje de corazón 💜</p>
-
-      <label class="rsvp-label">👤 Tu nombre completo</label>
-      <input type="text" id="rsvp-nombre" class="rsvp-input" placeholder="Apellido y Nombre">
-
-      <label class="rsvp-label">🍽️ Dieta especial</label>
-      <input type="text" id="rsvp-dieta" class="rsvp-input" placeholder="Celíaco, Vegano... (opcional)">
-
-      <label class="rsvp-label">🎵 Canción que no puede faltar</label>
-      <textarea id="rsvp-cancion" class="rsvp-input" rows="2" placeholder="Tu canción favorita 🎧" style="resize:none;"></textarea>
-
-      <label class="rsvp-label" style="margin-top:14px;">✉️ Un mensaje para Paolina</label>
-      <textarea id="rsvp-mensaje" class="rsvp-input" rows="2" placeholder="Escríbile algo lindo... 💜" style="resize:none;"></textarea>
-
-      <button onclick="enviarRSVP()" class="btn btn-wa" style="margin-top:18px;font-size:1.1rem;padding:18px;">📲 &nbsp;Confirmar por WhatsApp</button>
-    </div>
-  </div>
-</section>
-
-<!-- S14 · FOOTER -->
-<section class="sec parallax" style="min-height:65vh;background-image:url('fondo-bendicion.jpg');">
-  <div class="sec-content fade-up">
-    <h2 class="nombre" style="font-size:clamp(3rem,14vw,5rem);">¡Te espero!</h2>
-    <div class="ornline" style="max-width:280px;width:80%;margin:16px auto;"><span style="color:var(--gold);">✦</span></div>
-    <p class="subtitulo" style="color:var(--lace);font-size:.96rem;letter-spacing:.4em;">CON AMOR · PAOLINA &amp; FAMILIA</p>
-  </div>
-</section>
-
-</div><!-- /main-content -->
+</main>
 
 <script>
-/* ══ PARTÍCULAS SOBRE ══ */
-(function(){
-  const c=document.getElementById('sobre-particles'), ctx=c.getContext('2d');
-  let W,H,pts=[];
-  function sz(){ W=c.width=window.innerWidth; H=c.height=window.innerHeight; }
-  sz(); window.addEventListener('resize',sz);
-  const G=['✦','✧','·','⋆','✺','◇'], C=['#d4a017','#f0c040','#fef3b0','#d0a8ff'];
-  function mk(){ return {x:Math.random()*W,y:H+50,sz:Math.random()*9+3,a:0,aT:Math.random()*.3+.05,vx:(Math.random()-.5)*.25,vy:-Math.random()*.3-.08,g:G[~~(Math.random()*G.length)],c:C[~~(Math.random()*C.length)],r:Math.random()*Math.PI*2,rv:(Math.random()-.5)*.008}; }
-  for(let i=0;i<55;i++){ const p=mk(); p.y=Math.random()*H; p.a=Math.random()*.2; pts.push(p); }
-  (function loop(){
-    ctx.clearRect(0,0,W,H);
-    for(const p of pts){ p.x+=p.vx;p.y+=p.vy;p.r+=p.rv; if(p.a<p.aT)p.a+=.002; if(p.y<-30)Object.assign(p,mk()); ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.globalAlpha=p.a;ctx.fillStyle=p.c;ctx.font=`${p.sz}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(p.g,0,0);ctx.restore(); }
-    requestAnimationFrame(loop);
-  })();
-  const flap=document.getElementById('sobre-flap');
-  let flapAngle=0, dir=1;
-  (function animFlap(){
-    flapAngle += dir * 0.4;
-    if(flapAngle>18||flapAngle<0) dir*=-1;
-    flap.style.transform=`rotateX(${flapAngle}deg)`;
-    requestAnimationFrame(animFlap);
-  })();
+/* ═══ EDITÁ SOLO ESTE BLOQUE ═══ */
+const CFG={
+  novia:'Pato',
+  novio:'Edu',
+  completos:'Patricia & Eduardo',
+  fecha:'2026-12-04T21:30:00-03:00',   // fecha y hora de inicio (para la cuenta regresiva)
+  fechaCorta:'04 · 12 · 2026',
+  fechaLarga:'Viernes 4 de diciembre de 2026',
+  hora:'',                             // completá cuando la sepas, ej: '21:30' (si está vacío no se muestra)
+  salon:'',                            // nombre del salón (opcional)
+  direccion:'Maipú · Ruta 9 - km 1305',
+  whatsapp:'5493810000000',            // CAMBIAR: número para confirmar asistencia
+  alias:'Aniversario.bna',
+  cbu:'0110510030051022426265'
+};
+CFG.pareja=CFG.novia+' & '+CFG.novio;
+document.title=CFG.completos+' · 10 años de casados';
+document.querySelectorAll('[data-k]').forEach(e=>e.textContent=CFG[e.dataset.k]);
+document.getElementById('mapa').href='https://maps.google.com/?q='+encodeURIComponent((CFG.salon+' '+CFG.direccion+', Tucumán').trim());
+if(!CFG.hora)document.getElementById('fila-hora').style.display='none';
+
+/* ═══ ENTRADA + MÚSICA ═══ */
+const audio=new Audio('musica.mp3');audio.loop=true;
+const mus=document.getElementById('mus');
+function musica(){
+  if(audio.paused){audio.play().then(()=>mus.classList.remove('pausa')).catch(()=>{});}
+  else{audio.pause();mus.classList.add('pausa');}
+}
+function abrir(){
+  const s=document.getElementById('sobre');
+  s.classList.add('fuera');
+  document.getElementById('main').style.display='block';
+  mus.classList.add('v');
+  audio.play().then(()=>mus.classList.remove('pausa')).catch(()=>{});
+  setTimeout(()=>{s.style.display='none';medir();scroll()},800);
+}
+
+/* ═══ CUENTA REGRESIVA ═══ */
+const cd=document.getElementById('cd'),meta=new Date(CFG.fecha);
+(function t(){
+  const d=meta-new Date();
+  if(d<=0){cd.innerHTML='<p class="titulo">¡Hoy se baila!</p>';return;}
+  const v=[Math.floor(d/864e5),Math.floor(d%864e5/36e5),Math.floor(d%36e5/6e4),Math.floor(d%6e4/1e3)];
+  cd.innerHTML=['Días','Horas','Min','Seg'].map((l,i)=>`<div><b>${String(v[i]).padStart(2,'0')}</b><span>${l}</span></div>`).join('');
+  setTimeout(t,1000);
 })();
 
-/* ══ CONFETTI ══ */
-function launchConfetti(){
-  const cvs = document.getElementById('confetti-canvas');
-  cvs.style.display = 'block';
-  cvs.width = window.innerWidth; cvs.height = window.innerHeight;
-  const ctx = cvs.getContext('2d');
-  const pieces = [];
-  const colors = ['#f0c040','#d4a017','#d0a8ff','#6d2885','#fff','#fef3b0','#ff9fd4'];
-  const glyphs = ['✦','✧','⋆','◇','✺'];
-  for(let i=0;i<120;i++){
-    pieces.push({
-      x: Math.random()*cvs.width,
-      y: -20 - Math.random()*200,
-      w: Math.random()*10+4,
-      h: Math.random()*6+3,
-      color: colors[~~(Math.random()*colors.length)],
-      glyph: Math.random()>.5 ? glyphs[~~(Math.random()*glyphs.length)] : null,
-      vx: (Math.random()-.5)*4,
-      vy: Math.random()*3+1.5,
-      vr: (Math.random()-.5)*.12,
-      rot: Math.random()*Math.PI*2,
-      alpha: 1
-    });
-  }
-  let frame=0;
-  function draw(){
-    ctx.clearRect(0,0,cvs.width,cvs.height);
-    for(const p of pieces){
-      p.x+=p.vx; p.y+=p.vy; p.rot+=p.vr;
-      if(frame>90) p.alpha-=0.012;
-      ctx.save();
-      ctx.globalAlpha=Math.max(0,p.alpha);
-      ctx.translate(p.x,p.y); ctx.rotate(p.rot);
-      ctx.fillStyle=p.color;
-      if(p.glyph){
-        ctx.font=`${p.w*2}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle';
-        ctx.fillText(p.glyph,0,0);
-      } else {
-        ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
-      }
-      ctx.restore();
-    }
-    frame++;
-    if(frame<160) requestAnimationFrame(draw);
-    else { ctx.clearRect(0,0,cvs.width,cvs.height); cvs.style.display='none'; }
-  }
-  draw();
-}
-
-/* ══ SPARKLE (touch/click) ══ */
-(function(){
-  const cvs = document.getElementById('sparkle-canvas');
-  cvs.width = window.innerWidth; cvs.height = window.innerHeight;
-  window.addEventListener('resize',()=>{ cvs.width=window.innerWidth; cvs.height=window.innerHeight; });
-  const ctx = cvs.getContext('2d');
-  const sparks = [];
-  const G=['✦','✧','⋆','✺','◇','·'];
-  const C=['#f0c040','#d4a017','#d0a8ff','#fff','#fef3b0'];
-  function addSparks(x,y){
-    for(let i=0;i<8;i++){
-      const ang=Math.random()*Math.PI*2;
-      const spd=Math.random()*2.5+0.8;
-      sparks.push({
-        x,y,
-        vx:Math.cos(ang)*spd,vy:Math.sin(ang)*spd-1.2,
-        alpha:1,
-        g:G[~~(Math.random()*G.length)],
-        c:C[~~(Math.random()*C.length)],
-        sz:Math.random()*10+8,
-        rot:Math.random()*Math.PI*2,rv:(Math.random()-.5)*.1
-      });
-    }
-  }
-  document.addEventListener('click',e=>{ if(e.target.closest('#lightbox,#nav-float,#musicBtn,.btn,.btn-abrir')) return; addSparks(e.clientX,e.clientY); });
-  document.addEventListener('touchstart',e=>{
-    for(const t of e.touches){ if(t.target.closest('#lightbox,#nav-float,#musicBtn,.btn,.btn-abrir')) continue; addSparks(t.clientX,t.clientY); }
-  },{passive:true});
-  (function loop(){
-    ctx.clearRect(0,0,cvs.width,cvs.height);
-    for(let i=sparks.length-1;i>=0;i--){
-      const p=sparks[i];
-      p.x+=p.vx; p.y+=p.vy; p.vy+=0.06; p.rot+=p.rv;
-      p.alpha-=0.028;
-      if(p.alpha<=0){ sparks.splice(i,1); continue; }
-      ctx.save();
-      ctx.globalAlpha=p.alpha;
-      ctx.translate(p.x,p.y); ctx.rotate(p.rot);
-      ctx.fillStyle=p.c;
-      ctx.font=`${p.sz}px serif`; ctx.textAlign='center'; ctx.textBaseline='middle';
-      ctx.fillText(p.g,0,0);
-      ctx.restore();
-    }
-    requestAnimationFrame(loop);
-  })();
-})();
-
-/* ══ ABRIR ══ */
-function abrirInvitacion(){
-  const s=document.getElementById('sobre-screen'), m=document.getElementById('main-content');
-  s.classList.add('cerrar');
-  setTimeout(()=>{
-    s.style.display='none';
-    m.style.display='block';
-    document.getElementById('musicBtn').classList.add('visible');
-    document.getElementById('nav-float').classList.add('visible');
-    launchConfetti();
-    setTimeout(()=>{
-      document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
-      const f=document.querySelector('.fade-up'); if(f) f.classList.add('in');
-    },100);
-  },820);
-}
-
-/* ══ NAVEGACIÓN POR SECCIONES ══ */
-const NAV_SECTIONS = ['sec-0','sec-1','sec-2','sec-3','sec-3b','sec-5','sec-6'];
-const NAV_LABELS   = ['Inicio','Cuenta','Padres','Misa','Fiesta','Galería','RSVP'];
-function navTo(idx){
-  const el = document.getElementById(NAV_SECTIONS[idx]);
-  if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
-}
-// Actualizar label activo al hacer scroll
-const navLabel = document.getElementById('nav-label');
-const navBtns  = document.querySelectorAll('.nav-btn');
-function updateNav(){
-  let current=0;
-  NAV_SECTIONS.forEach((id,i)=>{
-    const el=document.getElementById(id);
-    if(el){
-      const r=el.getBoundingClientRect();
-      if(r.top<=window.innerHeight*0.5) current=i;
-    }
-  });
-  navBtns.forEach((b,i)=>b.classList.toggle('active',i===current));
-  if(navLabel) navLabel.textContent=NAV_LABELS[current]||'';
-}
-window.addEventListener('scroll',updateNav,{passive:true});
-
-/* ══ LIGHTBOX ══ */
-function openLightbox(src,caption){
-  const lb=document.getElementById('lightbox');
-  const img=document.getElementById('lb-img');
-  const cap=document.getElementById('lb-caption');
-  img.src=src;
-  if(caption) cap.textContent=caption;
-  lb.classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeLightbox(){
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow='';
-}
-document.getElementById('lightbox').addEventListener('click',function(e){
-  if(e.target===this) closeLightbox();
-});
-
-/* ══ PARTÍCULAS MAIN ══ */
-const pC=document.createElement('canvas');
-pC.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:1';
-document.body.prepend(pC);
-const pCtx=pC.getContext('2d'); let PW,PH,parts=[];
-function rP(){ PW=pC.width=window.innerWidth; PH=pC.height=window.innerHeight; }
-rP(); window.addEventListener('resize',rP);
-const GL=['✦','✧','·','⋆','✺','◇','✼'], PC=['#d4a017','#f0c040','#fef3b0','#d0a8ff','#fff'];
-function mkP(){ return{x:Math.random()*PW,y:PH+80,sz:Math.random()*8+3,alpha:0,aT:Math.random()*.28+.04,vx:(Math.random()-.5)*.22,vy:-Math.random()*.32-.07,g:GL[~~(Math.random()*GL.length)],c:PC[~~(Math.random()*PC.length)],rot:Math.random()*Math.PI*2,rv:(Math.random()-.5)*.007}; }
-for(let i=0;i<48;i++){ const p=mkP();p.y=Math.random()*PH;p.alpha=Math.random()*.2;parts.push(p); }
-(function aP(){
-  pCtx.clearRect(0,0,PW,PH);
-  for(const p of parts){ p.x+=p.vx;p.y+=p.vy;p.rot+=p.rv; if(p.alpha<p.aT)p.alpha+=.0015; if(p.y<-30)Object.assign(p,mkP()); pCtx.save();pCtx.translate(p.x,p.y);pCtx.rotate(p.rot);pCtx.globalAlpha=p.alpha;pCtx.fillStyle=p.c;pCtx.font=`${p.sz}px serif`;pCtx.textAlign='center';pCtx.textBaseline='middle';pCtx.fillText(p.g,0,0);pCtx.restore(); }
-  requestAnimationFrame(aP);
-})();
-
-/* ══ FADE IN ══ */
-const io=new IntersectionObserver(e=>e.forEach(x=>{ if(x.isIntersecting) x.target.classList.add('in'); }),{threshold:.08});
-
-/* ══ COUNTDOWN ══ */
-const MISA=new Date('2026-04-27T20:00:00-03:00'), FIESTA=new Date('2026-05-02T21:00:00-03:00');
-const prevVals={};
-function renderCD(target,id){
-  const el=document.getElementById(id); if(!el) return;
-  const diff=target-new Date();
-  if(diff<=0){el.innerHTML=`<div style="font-family:'Great Vibes',cursive;font-size:1.5rem;color:var(--purp-bg);">¡La magia ya comenzó! ✨</div>`;return;}
-  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-  const vals=[d,h,m,s], labels=['Días','Hs','Min','Seg'];
-  if(!prevVals[id]) prevVals[id]=[-1,-1,-1,-1];
-  el.innerHTML=vals.map((v,i)=>`<div class="cd-box"><span class="cd-num" id="${id}-n${i}">${String(v).padStart(2,'0')}</span><span class="cd-lbl">${labels[i]}</span></div>`).join('');
-  vals.forEach((v,i)=>{
-    if(v!==prevVals[id][i]){
-      const el2=document.getElementById(`${id}-n${i}`);
-      if(el2){ el2.classList.add('tick'); setTimeout(()=>el2.classList.remove('tick'),250); }
-      prevVals[id][i]=v;
-    }
+/* ═══ TIMELINE: se prende al bajar, se apaga al subir ═══ */
+const items=[...document.querySelectorAll('.ti')],segs=[];
+items.forEach((it,i)=>{if(i<items.length-1){const s=document.createElement('div');s.className='seg';it.appendChild(s);segs.push(s);}});
+function medir(){
+  items.forEach((it,i)=>{
+    if(i>=segs.length)return;
+    const h=it.offsetHeight/2, n=items[i+1];
+    segs[i].style.top=h+'px';
+    segs[i].style.height=((n.offsetTop+n.offsetHeight/2)-(it.offsetTop+h))+'px';
   });
 }
-(function tick(){ renderCD(FIESTA,'cd-fiesta'); renderCD(MISA,'cd-misa'); setTimeout(tick,1000); })();
-
-/* ══ MÚSICA ══ */
-let audioCtx=null,playing=false,musicTimer=null,noteIdx=0;
-const audioEl = document.createElement('audio');
-audioEl.src = 'musica.mp3';
-audioEl.loop = true;
-document.body.appendChild(audioEl);
-function toggleMusic(){
-  const btn=document.getElementById('musicBtn'), pb=document.getElementById('playBtn');
-  if(audioEl.paused){
-    audioEl.play().then(()=>{
-      btn.classList.remove('paused');
-      if(pb) pb.textContent='⏸ Pausar';
-      playing=true;
-    }).catch(()=>{ useWebAudio(btn,pb); });
-  } else {
-    audioEl.pause();
-    btn.classList.add('paused');
-    if(pb) pb.textContent='🎵 Reproducir Música';
-    playing=false;
-  }
+function scroll(){
+  const limite=innerHeight*.8,on=[];
+  items.forEach((it,i)=>{
+    const r=it.querySelector('.ic').getBoundingClientRect(),p=r.top+r.height/2<limite;
+    on[i]=p;
+    it.querySelector('.ic').classList.toggle('on',p);
+    it.querySelector('.tx').classList.toggle('on',p);
+  });
+  segs.forEach((s,i)=>s.classList.toggle('on',on[i]&&on[i+1]));
 }
-const MELODY=[[523.25,1],[587.33,1],[659.26,1],[783.99,2],[698.46,1],[659.26,1],[587.33,1],[523.25,2],[440,1],[523.25,1],[587.33,1],[659.26,2],[587.33,1],[523.25,1],[493.88,1],[440,2],[349.23,1],[440,1],[523.25,1],[659.26,1.5],[587.33,.5],[523.25,1],[440,1],[349.23,2]];
-function playNote(f,b){ if(!audioCtx)return 0; const dur=b*.38,t=audioCtx.currentTime,o=audioCtx.createOscillator(),g=audioCtx.createGain(); o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.07,t+.015);g.gain.exponentialRampToValueAtTime(.001,t+dur*.9);o.connect(g);g.connect(audioCtx.destination);o.start(t);o.stop(t+dur);return dur; }
-function scheduleMelody(){ if(!playing)return; const[f,b]=MELODY[noteIdx++%MELODY.length]; const dur=playNote(f,b); musicTimer=setTimeout(scheduleMelody,dur*1000-20); }
-function useWebAudio(btn,pb){
-  if(!audioCtx) audioCtx=new(window.AudioContext||window.webkitAudioContext)();
-  if(audioCtx.state==='suspended') audioCtx.resume();
-  if(!playing){ playing=true;btn.classList.remove('paused');if(pb)pb.textContent='⏸ Pausar';scheduleMelody(); }
-  else{ playing=false;clearTimeout(musicTimer);btn.classList.add('paused');if(pb)pb.textContent='🎵 Reproducir Música'; }
-}
+addEventListener('scroll',scroll,{passive:true});
+addEventListener('resize',()=>{medir();scroll()});
 
-/* ══ TIMELINE ══ */
-(function() {
-  const vtl=document.getElementById('vtl'); if(!vtl) return;
-  const cvs=document.getElementById('vtl-canvas'), ctx=cvs.getContext('2d');
-  const items=Array.from(vtl.querySelectorAll('.vtl-item')), N=items.length;
-  const iconProg=new Array(N).fill(0), lineProg=new Array(N-1).fill(0);
-  let iconCenters=[];
-  function measurePositions(){
-    const baseRect=vtl.getBoundingClientRect(), scrollTop=window.scrollY;
-    iconCenters=items.map(item=>{ const icon=item.querySelector('.vtl-icon'),r=icon.getBoundingClientRect(); return (r.top+scrollTop)-(baseRect.top+scrollTop)+r.height/2; });
-    cvs.width=2; cvs.height=vtl.offsetHeight; cvs.style.width='2px'; cvs.style.height=vtl.offsetHeight+'px';
-  }
-  function drawLines(){
-    ctx.clearRect(0,0,cvs.width,cvs.height);
-    for(let i=0;i<N-1;i++){
-      const prog=lineProg[i]; if(prog<=0) continue;
-      const y1=iconCenters[i],y2=iconCenters[i+1],yEnd=y1+(y2-y1)*prog;
-      ctx.beginPath(); ctx.moveTo(1,y1); ctx.lineTo(1,yEnd);
-      ctx.strokeStyle='#d4a017'; ctx.lineWidth=2; ctx.lineCap='round'; ctx.stroke();
-    }
-  }
-  function applyLit(){
-    items.forEach((item,i)=>{
-      const icon=item.querySelector('.vtl-icon'),conn=item.querySelector('.vtl-connector'),body=item.querySelector('.vtl-body'),lit=iconProg[i]>=1;
-      if(lit&&!icon.classList.contains('lit')){ icon.classList.add('lit'); if(conn)conn.classList.add('lit'); if(body)body.classList.add('lit'); }
-      else if(!lit&&icon.classList.contains('lit')){ icon.classList.remove('lit'); if(conn)conn.classList.remove('lit'); if(body)body.classList.remove('lit'); }
-    });
-  }
-  const SPEED=0.08;
-  const iconTarget=new Array(N).fill(0), lineTarget=new Array(N-1).fill(0);
-  function updateTargets(){
-    if(!iconCenters.length) return;
-    const vH=window.innerHeight, baseY=vtl.getBoundingClientRect().top;
-    for(let i=0;i<N;i++){ const isy=baseY+iconCenters[i]; iconTarget[i]=isy<vH*.80?1:0; }
-    for(let i=0;i<N-1;i++){ lineTarget[i]=(iconTarget[i]===1&&iconTarget[i+1]===1)?1:0; }
-  }
-  let needsRender=true;
-  function animate(){
-    requestAnimationFrame(animate); if(!needsRender) return;
-    updateTargets();
-    let anyChange=false;
-    for(let i=0;i<N;i++){ const diff=iconTarget[i]-iconProg[i]; if(Math.abs(diff)>.005){iconProg[i]+=diff*SPEED;anyChange=true;}else{iconProg[i]=iconTarget[i];} }
-    for(let i=0;i<N-1;i++){ const diff=lineTarget[i]-lineProg[i]; if(Math.abs(diff)>.005){lineProg[i]+=diff*SPEED;anyChange=true;}else{lineProg[i]=lineTarget[i];} }
-    drawLines(); applyLit();
-    if(!anyChange) needsRender=false;
-  }
-  window.addEventListener('scroll',()=>{ needsRender=true; },{passive:true});
-  window.addEventListener('resize',()=>{ measurePositions(); needsRender=true; });
-  function initTimeline(){ measurePositions(); needsRender=true; animate(); }
-  const origAbrir=window.abrirInvitacion;
-  window.abrirInvitacion=function(){ if(origAbrir)origAbrir(); setTimeout(initTimeline,900); };
-  if(document.getElementById('main-content').style.display!=='none') setTimeout(initTimeline,300);
+/* ═══ CHISPAS ═══ */
+const cv=document.getElementById('chispas'),cx=cv.getContext('2d');
+let W,H;function tam(){W=cv.width=innerWidth;H=cv.height=innerHeight}tam();addEventListener('resize',tam);
+const col=['#ff2e9a','#22e5ff','#f5c542','#ffffff'];
+const ps=Array.from({length:36},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2.2+.8,v:Math.random()*.4+.15,a:Math.random(),c:col[Math.random()*4|0]}));
+(function f(){
+  cx.clearRect(0,0,W,H);
+  ps.forEach(p=>{p.y-=p.v;p.a+=.02;if(p.y<-5){p.y=H+5;p.x=Math.random()*W}
+    cx.globalAlpha=.25+.45*Math.abs(Math.sin(p.a));cx.fillStyle=p.c;cx.beginPath();cx.arc(p.x,p.y,p.r,0,7);cx.fill();});
+  requestAnimationFrame(f);
 })();
 
-/* ══ WHATSAPP ══ */
-function enviarRSVP(){
-  const n=document.getElementById('rsvp-nombre').value.trim();
-  if(!n){alert('Por favor ingresá tu nombre 😊');return;}
-  const d=document.getElementById('rsvp-dieta').value.trim();
-  const c=document.getElementById('rsvp-cancion').value.trim();
-  const msg=document.getElementById('rsvp-mensaje').value.trim();
-  const tel='5493816859115';
-  const texto=`🎉 *Confirmación - 15 años Paolina Giovanna*%0A%0A👤 *Nombre:* ${encodeURIComponent(n)}%0A🍽️ *Dieta:* ${encodeURIComponent(d||'Sin restricciones')}%0A🎵 *Canción:* ${encodeURIComponent(c||'—')}%0A💜 *Mensaje:* ${encodeURIComponent(msg||'—')}%0A%0A✨ ¡Ahí estaré!`;
-  window.open(`https://wa.me/${tel}?text=${texto}`,'_blank');
+/* ═══ WHATSAPP Y ALIAS ═══ */
+function rsvp(){
+  const g=id=>document.getElementById(id).value.trim();
+  if(!g('r-n')){alert('Escribí tu nombre');return;}
+  const m=`🪩 *Confirmación · 10 años de casados de ${CFG.pareja}*\n\n👤 *Nombre:* ${g('r-n')}\n👥 *Personas:* ${g('r-c')||'1'}\n🍽️ *Menú:* ${g('r-d')||'Sin restricciones'}\n🎵 *Canción:* ${g('r-s')||'—'}\n\n¡Ahí estaré bailando!`;
+  window.open('https://wa.me/'+CFG.whatsapp+'?text='+encodeURIComponent(m),'_blank');
 }
-
-/* ══ CBU ══ */
-function copiarCBU(){
-  const alias='paolina2011';
-  navigator.clipboard.writeText(alias).then(()=>{ const m=document.getElementById('cbu-msg');m.style.display='block';setTimeout(()=>m.style.display='none',3000); }).catch(()=>alert('Alias: '+alias));
+function copiar(v){
+  const ok=()=>{const e=document.getElementById('ok');e.style.display='block';setTimeout(()=>e.style.display='none',3000)};
+  (navigator.clipboard?navigator.clipboard.writeText(v).then(ok):Promise.reject()).catch(()=>alert(v));
 }
 </script>
 </body>
