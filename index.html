@@ -67,10 +67,10 @@ button{font:inherit;cursor:pointer}
 
 /* TIMELINE */
 .tl{width:100%;max-width:420px;margin:14px auto 0;position:relative}
-.ti{position:relative;display:grid;grid-template-columns:1fr 56px 1fr;align-items:center;padding:16px 0}
-.ti:nth-child(even) .tx{grid-column:3;grid-row:1;text-align:left;transform:translateX(-14px)}
-.ti:nth-child(odd) .tx{grid-column:1;grid-row:1;text-align:right;transform:translateX(14px)}
-.ic{grid-column:2;grid-row:1;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;background:#2b2150;border:2px solid #4a3f78;filter:grayscale(1) brightness(.6);transition:.4s;position:relative;z-index:2}
+.ti{position:relative;display:grid;grid-template-columns:1fr 76px 1fr;align-items:center;padding:16px 0}
+.ti:nth-child(even) .tx{grid-column:3;grid-row:1;text-align:left;padding-left:8px;transform:translateX(-14px)}
+.ti:nth-child(odd) .tx{grid-column:1;grid-row:1;text-align:right;padding-right:8px;transform:translateX(14px)}
+.ic{grid-column:2;grid-row:1;justify-self:center;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;background:#2b2150;border:2px solid #4a3f78;filter:grayscale(1) brightness(.6);transition:.4s;position:relative;z-index:2}
 .ic.on{background:linear-gradient(135deg,var(--mag),#a02cff);border-color:#fff;filter:none;box-shadow:0 0 22px rgba(255,46,154,.8);transform:scale(1.1)}
 .tx{opacity:0;transition:.5s}
 .tx.on{opacity:1;transform:none!important}
@@ -118,7 +118,7 @@ button{font:inherit;cursor:pointer}
     <p class="chico">Tu entrada para la noche de</p>
     <h1 class="nombres" data-k="pareja"></h1>
     <div class="linea"></div>
-    <p class="cita" style="font-size:1.25rem;margin-bottom:18px">Viernes y sábado bailamos. Esta vez bailamos diez años de casados.</p>
+    <p class="cita" style="font-size:1.25rem;margin-bottom:18px">Festejamos diez años de casados.</p>
     <button class="btn neon" onclick="abrir()">Entrar a la pista</button>
   </div>
 </div>
@@ -158,7 +158,7 @@ button{font:inherit;cursor:pointer}
 <section class="sec n3 haces">
   <div class="cont">
     <div class="card">
-      <p class="cita">Hace diez años dijimos que sí, y desde entonces cada viernes y cada sábado nos encontró en la pista. Hoy lo celebramos con las personas que más queremos.</p>
+      <p class="cita">Hace diez años dijimos que sí, y desde entonces cada viernes y sábado nos bailamos todo en la pista. Hoy lo celebramos con las personas que más queremos.</p>
       <div class="linea"></div>
       <p class="titulo" style="margin:0" data-k="pareja"></p>
     </div>
@@ -169,7 +169,7 @@ button{font:inherit;cursor:pointer}
 <section class="sec n2">
   <div class="cont">
     <div class="card cian">
-      <h3 class="titulo">La fiesta</h3>
+      <h1 class="titulo">La fiesta</h1>
       <p class="fecha" data-k="fechaLarga"></p>
       <div class="linea"></div>
       <div class="fila" id="fila-hora"><em>🕘</em><span>Desde las <b data-k="hora"></b> hs</span></div>
